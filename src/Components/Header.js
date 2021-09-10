@@ -1,17 +1,32 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const Header = styled.header``;
+
+const HeaderList = styled.ul`
+  display: flex;
+  &:hover {
+    background-color: yellow;
+  }
+`;
+
+const HeaderItem = styled.li``;
+
+const MLink = styled(Link)``;
 
 export default () => (
-  <header>
-    <ul>
-      <li>
-        <a href="/">Albums</a>
-      </li>
-      <li>
-        <a href="/artist">Artist</a>
-      </li>
-      <li>
-        <a href="/search">Search</a>
-      </li>
-    </ul>
-  </header>
+  <Header>
+    <HeaderList>
+      <HeaderItem>
+        <MLink to="/">Albums</MLink>
+      </HeaderItem>
+      <HeaderItem>
+        <MLink to="/artist">Artist</MLink>
+      </HeaderItem>
+      <HeaderItem>
+        <MLink to="/search">Search</MLink>
+      </HeaderItem>
+    </HeaderList>
+  </Header>
 );
