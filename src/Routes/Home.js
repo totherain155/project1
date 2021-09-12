@@ -37,7 +37,7 @@ const Home = () => {
                       : null
                   }
                   musicId={index}
-                  /*musicName={music.artist.name} */
+                  /* musicName={music.artist.url} */
                 />
               </React.Fragment>;
             })}
