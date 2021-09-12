@@ -15,7 +15,6 @@ export default () => (
     <Router>
       <>
         <Header />
-        <hr />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/artist" exact component={Artist} />
