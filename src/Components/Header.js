@@ -39,10 +39,10 @@ export default withRouter(({ location: { pathname } }) => (
   <Header>
     <HeaderList>
       <HeaderItem current={pathname === "/"}>
-        <MLink to="/">Albums</MLink>
+        <MLink to="/">Home</MLink>
       </HeaderItem>
-      <HeaderItem current={pathname === "/artist"}>
-        <MLink to="/artist">Artist</MLink>
+      <HeaderItem current={pathname === "/tv"}>
+        <MLink to="/tv">TV</MLink>
       </HeaderItem>
       <HeaderItem current={pathname === "/search"}>
         <MLink to="/search">Search</MLink>

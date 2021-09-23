@@ -1,10 +1,12 @@
-# make music page through react hooks
+# 기존에 class component로 제작된 강의내용을 react hooks로 변경한 뒤 기능을 추가한다.
 
-## styled은 'styled-components'를 이용한다.
+## style은 'styled-components'를 이용한다.
 
 ### page
 
-#### API Verbs
+- [] Home
+- [] TV Shows
+- [] Search
+- [] Detail
 
-API_URL http://ws.audioscrobbler.com/2.0/
-Image
+#### API Verbs

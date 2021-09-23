@@ -2,7 +2,7 @@ import GridCards from "Components/GridCards";
 import React, { useEffect, useState } from "react";
 import { FaCode } from "react-icons/fa";
 import { API_URL, IMG_BASE_URL } from "./../api";
-import { API_KEY } from "./../api";
+import {} from "./../api";
 import { Row } from "antd";
 
 const Home = () => {
