@@ -4,9 +4,8 @@ import GlobalStyle from "./GlobalStyle";
 import axios from "axios";
 
 function App() {
-  const API_KEY = "16e89e9d98e64058a20fb283c8d05f68";
-
   return (
+    // Fragments는 원하는 수만큼의 컴포넌트를 return할 수 있게 해준다.
     <>
       <Router />
       <GlobalStyle />
