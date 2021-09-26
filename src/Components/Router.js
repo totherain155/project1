@@ -16,6 +16,7 @@ export default () => (
       <>
         <Header />
         <Switch>
+          {/*동시에 라우팅이 적용되는 것을 막기 위해 exact를 사용해준다. */}
           <Route path="/" exact component={Home} />
           <Route path="/tv" exact component={TV} />
           <Route path="/search" exact component={Search} />
