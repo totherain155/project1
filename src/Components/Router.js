@@ -15,6 +15,7 @@ export default () => (
     <Router>
       <>
         <Header />
+        {/*Switch는 한번에 하나의 Route만 render시켜준다. */}
         <Switch>
           {/*동시에 라우팅이 적용되는 것을 막기 위해 exact를 사용해준다. */}
           <Route path="/" exact component={Home} />
