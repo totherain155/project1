@@ -10,3 +10,12 @@
 - [] Detail
 
 #### API Verbs
+
+- [x] Now Playing (Movie)
+- [x] Upcoming (Movie)
+- [x] Top Rated (TV)
+- [x] Popular (TV, X)
+- [x] Airing Today (TV)
+- [x] Movie Detail
+- [x] TV Show Detail
+- [x] Search (Movie, TV)

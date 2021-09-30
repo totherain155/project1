@@ -26,7 +26,8 @@ const HeaderItem = styled.li`
   &:not(:last-child) {
     margin-right: 30px;
   }
-  // 기본값은 투명하게 설정한다.
+  /* 기본값은 투명하게 설정한다. withRouter로 불러온 location속 pathname 경로가 true가 되면
+  border-bottom 라인을 red로 한다. */
   border-bottom: 2px solid ${(props) => (props.current ? "red" : "transparent")};
   transition: border-bottom ease-in-out 0.7s;
   width: 50px;
