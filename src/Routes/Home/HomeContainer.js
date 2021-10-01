@@ -23,6 +23,13 @@ const HomeContainer = () => {
         const {
           data: { results: upcoming },
         } = await moviesApi.upcoming();
+        const {
+          data: { results: popular },
+        } = await moviesApi.popular();
+
+        setNowPlaying(nowPlaying);
+        setUpcoming(upcoming);
+        setPopular(popular);
       } catch {
         setError("Can't get Movies");
       } finally {
