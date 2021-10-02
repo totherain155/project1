@@ -12,6 +12,7 @@ const HomeContainer = () => {
 
   // useEffet, axios, try catch 사용하여 class component의 componentDidMount를 대체
 
+  /*useEffect 내부에서 async/await를 사용하고 싶다면, 함수 내부에 async 키워드가 붙은 또 다른 함수를 만들어서 사용해야 한다. */
   useEffect(() => {
     const fetchApi = async () => {
       setLoading(true);
@@ -27,6 +28,8 @@ const HomeContainer = () => {
           data: { results: popular },
         } = await moviesApi.popular();
 
+        //class component의 setState를 아래와 같이 대신할 수 있다.
+        //바뀐 state는 nowPlaying state에 저장된다.
         setNowPlaying(nowPlaying);
         setUpcoming(upcoming);
         setPopular(popular);
