@@ -22,6 +22,7 @@ export default () => (
           <Route path="/" exact component={Home} />
           <Route path="/tv" exact component={TV} />
           <Route path="/search" exact component={Search} />
+          {/*유동적인 값을 전달할 때는 파라미터로 특정 아이디를 전달하게 된다. */}
           <Route path="/movie/:id" exact component={Detail} />
           <Route path="/tv/:id" exact component={Detail} />
           {/*일치하는 router없다면 "/"로 보내줄 것이다. */}
