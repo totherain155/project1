@@ -4,10 +4,10 @@
 
 ### page
 
-- [] Home
-- [] TV Shows
-- [] Search
-- [] Detail
+- [x] Home
+- [x] TV Shows
+- [x] Search
+- [x] Detail
 
 #### API Verbs
 

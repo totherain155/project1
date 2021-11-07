@@ -30,6 +30,7 @@ const HomeContainer = () => {
 
         //class component의 setState를 아래와 같이 대신할 수 있다.
         //바뀐 state는 nowPlaying state에 저장된다.
+
         setNowPlaying(nowPlaying);
         setUpcoming(upcoming);
         setPopular(popular);

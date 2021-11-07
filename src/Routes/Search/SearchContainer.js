@@ -10,11 +10,23 @@ const SearchContainer = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    // enter를 통해 자동적으로 submit되며 새로고침되는 것을 방지해준다.
+    event.preventDefault();
     if (searchTerm !== "") {
       searchByTerm();
     }
   };
+
+  const updateTerm = (event) => {
+    const {
+      target: { value },
+    } = event;
+    console.log(value);
+    setSearchTerm(value);
+    // search input reset 할것
+  };
+
   /*test용 코드
 
   useEffect(() => {
@@ -33,6 +45,7 @@ const SearchContainer = () => {
       console.log(movieResults, tvResults);
       setMovieResults(movieResults);
       setTvResults(tvResults);
+      // throw Error();
     } catch {
       setError("Can't find results");
     } finally {
@@ -48,6 +61,7 @@ const SearchContainer = () => {
       loading={loading}
       error={error}
       handleSubmit={handleSubmit}
+      updateTerm={updateTerm}
     />
   );
 };

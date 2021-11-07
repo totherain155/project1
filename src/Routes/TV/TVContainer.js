@@ -27,6 +27,7 @@ const TVContainer = () => {
         setAiringToday(airingToday);
         setTopRated(topRated);
         setPopular(popular);
+        //  throw Error();
       } catch {
         setError("Can't get TV Show");
       } finally {

@@ -37,11 +37,11 @@ const DetailContainer = (props) => {
           ({ data: result } = await tvApi.tvDetail(parsedId));
         }
         console.log(result);
+        setResult(result);
       } catch {
         setError("Can't find anything");
       } finally {
         setLoading(false);
-        setResult(result);
       }
     };
     fetchApi();
