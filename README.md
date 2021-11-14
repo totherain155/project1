@@ -22,4 +22,5 @@
 
 ##### favorite button
 
+- [] sign up page
 - [] favorite page
