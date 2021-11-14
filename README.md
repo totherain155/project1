@@ -19,3 +19,7 @@
 - [x] Movie Detail
 - [x] TV Show Detail
 - [x] Search (Movie, TV)
+
+##### favorite button
+
+- [] favorite page
