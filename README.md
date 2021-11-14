@@ -22,5 +22,5 @@
 
 ##### favorite button
 
-- [] sign up page
+- [] sign up page(Login with JWT web token)
 - [] favorite page
