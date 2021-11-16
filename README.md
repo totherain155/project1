@@ -20,7 +20,10 @@
 - [x] TV Show Detail
 - [x] Search (Movie, TV)
 
-##### favorite button
+##### favorite button (작업중)
 
-- [] sign up page(Login with JWT web token)
+- [] sign up page(Login with JWT web token) .. 쿠키, 세션 방식으로 할지도 고민 해봐야할 듯 하다.
+  예외 처리에 대한 고민을 잊지 말 것.
 - [] favorite page
+
+기능 설명 : 좋아요 버튼을 클릭시 그 정보를 DB로 가져와야 한다.
